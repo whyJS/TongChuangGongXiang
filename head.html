@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>头部</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/min.css" />
+<script type="text/javascript">
+	$(document).ready(function(){
+		var a=0;
+		$(".head_dv_span").click(function(){
+			if(a==0){
+				$(".head_dv_span").html("关闭");
+				$(".head_dv2").fadeIn();
+			}else{
+				$(".head_dv_span").html("选项");
+				$(".head_dv2").hide();
+			}
+			a++;
+			if(a>1){
+				a=0;
+			}
+		})
+	})
+</script>
+	</head>
+
+	<body>
+
+		<header class="head">
+			<div class="head_nav">
+				<div class="head_nav_logo">
+					<a href="#">
+						<img src="images/new/logo1.png" width="84px" height="20px" alt="">
+						<span style="color: black;font-size: 14px;font-weight: 600;">北京同创共享网络科技有限公司</span>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">新闻概要</a>
+					</li>
+					<!--<li id="nav_app"><a href="" >顺道嘉</a></li>
+			<li id="nav_app"><a href="" >商家版</a></li>-->
+					<li id="app">
+						<a href="#">
+							APP
+
+						</a>
+						<div>
+							<a>
+								<p>顺道嘉</p>
+							</a>
+							<a>
+								<p>商家版</p>
+							</a>
+						</div>
+
+					</li>
+					<li>
+						<a href="">最新活动</a>
+					</li>
+					<li>
+						<a href="">优秀品牌商</a>
+					</li>
+					<li>
+						<a href="">招商加盟</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="head_dv">
+			<ul>
+				<li><img src="images/new/logo1.png" width="84px" height="20px" alt=""></li>
+				<li><span class="head_dv_span">选项</span></li>
+			</ul>
+		</div>
+		<div id="head_dv2">
+		<div class="head_dv2">
+			<ul>
+				<li>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="">新闻概要</a>
+				</li>
+				<li id="nav_app">
+					<a href="">顺道嘉</a>
+				</li>
+				<li id="nav_app">
+					<a href="">商家版</a>
+				</li>
+				<li>
+					<a href="#">
+						APP
+
+					</a>
+				</li>
+				<li>
+					<a href="">最新活动</a>
+				</li>
+				<li>
+					<a href="">优秀品牌商</a>
+				</li>
+				<li>
+					<a href="">招商加盟</a>
+				</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<!--尾部-->
+
+		<footer id="foot">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="text-align: center;">
+				北京同创共享网络科技有限公司
+			</div>
+			<div class="col-md-12" style="text-align: center;">
+				  公司地址：北京市通州区榆景东路金融街园中园5号院56号楼
+			</div>
+			<div class="col-md-12" style="text-align: center;">
+				   客服热线：4000-111-228&nbsp;&nbsp;&nbsp;
+        京ICP备16041276号-1&nbsp;&nbsp;&nbsp;
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>活动公布</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/min.css" />
+		<script type="text/javascript" src="js/head-foot.js"></script>
+
+		<style type="text/css">
+			.vote-body-d1,
+			.vote-body-d3 {
+				float: left;
+				width: 25%;
+				color: #666666;
+			}
+			
+			.vote-body-d2 {
+				float: left;
+				width: 50%;
+				text-align: center;
+				color: #666666;
+			}
+
+			
+			.vote-body-div {
+				width: 98%;
+				margin: auto;
+				padding-bottom: 30px;
+				background:rgb(255,255,255);
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-top: 20px;
+			}
+		
+			@media only screen and (max-width: 768px) {
+				#vote-jg-body-s-2 {
+					height: 200px;
+					overflow: auto;
+					border: 0px solid red;
+				    padding-top: 20px;
+				}
+				#vote-h3{padding-top: 30px;}
+			}
+			@media only screen and (min-width: 768px) {
+				#vote-jg-body-s-2 {
+					height: 500px;
+					overflow: auto;
+					border: 0px solid red;
+				    padding-top: 20px;
+				}
+			
+			}
+			#vote-h3{color: #333333;padding-bottom: 30px;}
+		</style>
+
+	</head>
+
+	<body style="background: rgb(240,240,240);">
+		<!--头部-->
+		<header class="head">
+			<div class="head_nav">
+				<div class="head_nav_logo">
+					<a href="#">
+						<img src="images/new/logo1.png" width="84px" height="20px" alt="">
+						<span style="color: black;font-size: 14px;font-weight: 600;">北京同创共享网络科技有限公司</span>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">新闻概要</a>
+					</li>
+					<!--<li id="nav_app"><a href="" >顺道嘉</a></li>
+			<li id="nav_app"><a href="" >商家版</a></li>-->
+					<li id="app">
+						<a href="#">
+							APP
+
+						</a>
+						<div>
+							<a>
+								<p>顺道嘉</p>
+							</a>
+							<a>
+								<p>商家版</p>
+							</a>
+						</div>
+
+					</li>
+					<li>
+						<a href="">最新活动</a>
+					</li>
+					<li>
+						<a href="">优秀品牌商</a>
+					</li>
+					<li>
+						<a href="">招商加盟</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="head_dv">
+			<ul>
+				<li><img src="images/new/logo1.png" width="84px" height="20px" alt=""></li>
+				<li><span class="head_dv_span">选项</span></li>
+			</ul>
+		</div>
+		<div id="head_dv2">
+			<div class="head_dv2">
+				<ul>
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">新闻概要</a>
+					</li>
+					<li id="nav_app">
+						<a href="">顺道嘉</a>
+					</li>
+					<li id="nav_app">
+						<a href="">商家版</a>
+					</li>
+					<li>
+						<a href="#">
+							APP
+
+						</a>
+					</li>
+					<li>
+						<a href="">最新活动</a>
+					</li>
+					<li>
+						<a href="">优秀品牌商</a>
+					</li>
+					<li>
+						<a href="">招商加盟</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--投票结果-->
+		<!--年会结果-->
+		<div class="container">
+			<div class="row" style="text-align: center;padding-top: 60px;">
+				<h1  style="color: #333333;">年会投票结果</h1>
+			</div>
+			<div class="row" style="text-align: center;">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="row">
+						<h3 style="color: #333333;">第一名</h3>
+						<h4 style="color: #666666;">天保天保天保</h4>
+						<h4 style="color: #666666;">100票</h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="row">
+						<h3 style="color: #333333;">第一名</h3>
+						<h4 style="color: #666666;">天保天保天保</h4>
+						<h4 style="color: #666666;">100票</h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="row">
+						<h3 style="color: #333333;">第一名</h3>
+						<h4 style="color: #666666;">天保天保天保</h4>
+						<h4 style="color: #666666;">100票</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--节目结果-->
+		<div class="container" style="padding-bottom: 40px;">
+			<div class="row" style="text-align: center;padding-top: 60px;">
+				<h1 style="color: #333333;">年夜饭投票结果</h1>
+			</div>
+			<div class="row" id="vote-jg-body" style="text-align: center;">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="vote-jg-body-s">
+					
+					<div class="row" style="text-align: center;" style="border: 1px solid black;">
+						
+							<h3 id="vote-h3">一等奖</h3>
+						</div>
+					<!--</div>-->
+					<div class="vote-body-div">
+					<div class="row" id="vote-jg-body-s-2">
+						<!--<div class="vote-body-div">-->
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="vote-jg-body-s">
+					
+					<div class="row" style="text-align: center;">
+						
+							<h3 id="vote-h3">一等奖</h3>
+						</div>
+					<!--</div>-->
+					<div class="vote-body-div">
+					<div class="row" id="vote-jg-body-s-2">
+						<!--<div class="vote-body-div">-->
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+		
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="vote-jg-body-s">
+					
+					<div class="row" style="text-align: center;" >
+						
+						<h3 id="vote-h3">一等奖</h3>
+						</div>
+					<!--</div>-->
+					<div class="vote-body-div">
+					<div class="row" id="vote-jg-body-s-2">
+						<!--<div class="vote-body-div">-->
+														<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="vote-body-d1">某某某</div>
+								<div class="vote-body-d2">13146031411</div>
+								<div class="vote-body-d3">100票</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--尾部-->
+
+		<footer id="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="text-align: center;">
+						北京同创共享网络科技有限公司
+					</div>
+					<div class="col-md-12" style="text-align: center;">
+						公司地址：北京市通州区榆景东路金融街园中园5号院56号楼
+					</div>
+					<div class="col-md-12" style="text-align: center;">
+						客服热线：4000-111-228&nbsp;&nbsp;&nbsp; 京ICP备16041276号-1&nbsp;&nbsp;&nbsp;
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>
